@@ -1,0 +1,45 @@
+onepagecheckoutps:
+
+in method supportModulesShipping, add:
+
+case 'rc_fancourier':
+    if ($this->isModuleActive('rc_fancourier')) {
+        if ($rc_fancourier = Module::getInstanceByName('rc_fancourier')) {
+            $params_rc_fancourier = [
+                'carrier' => (array)$carrier['instance'],
+                'cart' => Context::getContext()->cart,
+            ];
+            $html = $rc_fancourier->hookDisplayCarrierExtraContent($params_rc_fancourier);
+
+            $carrier['extra_info_carrier'] = $html;
+        }
+
+        return true;
+    }
+    break;
+
+in js file, in method placeOrder:
+
+if ($('.delivery_option_radio:checked').closest('.delivery_option').find('[name="fancourier_fanbox_id"]').length) {
+    if ($('.delivery_option_radio:checked').closest('.delivery_option').find('.showLockerDetailsFanbox').text().trim() == '')  {
+        $('.delivery_option_radio:checked').closest('.delivery_option').find('.showLockerDetailsFanbox')[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        alert('Va rugam sa alegeti un locker FANBOX');
+        return false;
+    }
+}
+
+thecheckout:
+
+at the beginning of method modifyAccountAndAddress (the one which has arg triggerElement):
+
+if (triggerElement.attr('name') == 'id_state' || triggerElement.attr('name') == 'id_country') {
+        var city_input_selector_prefix = '';
+        if ($(triggerElement).closest('#thecheckout-address-invoice').length) {
+            city_input_selector_prefix = '#thecheckout-address-invoice';
+        } else if ($(triggerElement).closest('#thecheckout-address-delivery').length) {
+            city_input_selector_prefix = '#thecheckout-address-delivery';
+        }
+        loadCitiesSelect($(city_input_selector_prefix + ' [name="id_state"]').val(), 'city', $(city_input_selector_prefix + ' [name="city"]').val(), city_input_selector_prefix);
+    }
+
+to remove the method that modifies the value of the city field with toCapitalize()

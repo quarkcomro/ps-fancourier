@@ -1,0 +1,49 @@
+/**
+ * 2018-2021 GURU CODERS SRL
+ *
+ * NOTICE OF LICENSE
+ *
+ * DISCLAIMER
+ *
+ * YOU ARE NOT ALLOWED TO REDISTRIBUTE OR RESELL THIS FILE OR ANY OTHER FILE
+ * USED BY THIS MODULE.
+ *
+ * @author    GURU CODERS SRL <stickyrst@gmail.com>
+ * @copyright 2018-2021 GURU CODERS SRL
+ * @license   Commercial
+ */
+
+.bootstrap .alert.rc_fancourier_heading {
+    padding: 5px 0;
+}
+
+.bootstrap .form-horizontal .form-group.rc_fancourier_heading .control-label {
+    padding-top: 0;
+}
+
+#rc_fancourier_locations_table, #rc_fancourier_services_table {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#rc_fancourier_locations_table th, #rc_fancourier_locations_table td {
+    padding: 3px 5px;
+    text-align: center;
+    height: 37px;
+}
+
+#rc_fancourier_locations_table .rc_fancourier_listing_add td {
+    text-align: left;
+}
+
+#rc_fancourier_locations_table tr:first-child td {
+    background-color: #dcf4f9;
+}
+
+#rc_fancourier_locations_table tr:first-child td:last-child:after {
+    content: '*';
+}
+
+.rc_fancourier_heading {
+    display: block!important;
+}

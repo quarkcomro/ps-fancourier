@@ -1,0 +1,73 @@
+/**
+ * 2018-2021 GURU CODERS SRL
+ *
+ * NOTICE OF LICENSE
+ *
+ * DISCLAIMER
+ *
+ * YOU ARE NOT ALLOWED TO REDISTRIBUTE OR RESELL THIS FILE OR ANY OTHER FILE
+ * USED BY THIS MODULE.
+ *
+ * @author    GURU CODERS SRL <stickyrst@gmail.com>
+ * @copyright 2018-2021 GURU CODERS SRL
+ * @license   Commercial
+ */
+
+.rc_fancourier_awbs {
+    margin-bottom: 20px;
+}
+
+.rc_fancourier_awbs input.rc_fancourier_awb_input {
+    width: 140px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.rc_fancourier_awbs .rc_fancourier_deleteawb, .rc_fancourier_awbs .rc_fancourier_showawb {
+    margin-right: 5px;
+}
+
+.rc_fancourier_awbs .row {
+    margin-bottom: 5px;
+}
+.rc_fan_show_office {
+    display: none;
+}
+.rc_fancourier_infos_container, .rc_fancourier_awb_manual {
+    background: #d3d8db;
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.rc_fancourier_infos_container {
+    float: right;
+}
+.rc_fancourier_infos_container p {
+    margin-bottom: 3px;
+}
+.rc_fancourier_refresh_order_infos, .rc_fancourier_manual_awb_add {
+    margin-top: 5px;
+    width: 100%;
+}
+#rc_fancourier_generate_awb {
+    width: 100%;
+}
+.rc_fancourier_packing_panel {
+    display: none;
+}
+.rc_fancourier_packing_data {
+    display: block;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+.rc_fancourier_packing_data input[type="text"] {
+    width: 100px;
+    display: inline-block;
+    margin-right: 20px;
+}
+#manual_add_awb, #rc_fancourier_location_manual {
+    display: inline-block;
+}
