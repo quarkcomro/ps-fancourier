@@ -1,0 +1,29 @@
+{
+    "name": "gurucoders/rc_fancourier",
+    "description": "Romanian Carriers - Fan Courier shipping module for PrestaShop",
+    "type": "prestashop-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "GURU CODERS SRL",
+            "email": "office@gurucoders.ro"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "prestashop/php-dev-tools": "^4.0",
+        "phpstan/phpstan": "^1.10",
+        "prestashop/autoindex": "^2.0"
+    },
+    "config": {
+        "prepend-autoloader": false
+    },
+    "autoload": {
+        "classmap": [
+            "RcFanCourierHelper.php",
+            "classes/"
+        ]
+    }
+}

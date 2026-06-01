@@ -1,0 +1,217 @@
+/**
+ * 2018-2021 GURU CODERS SRL
+ *
+ * NOTICE OF LICENSE
+ *
+ * DISCLAIMER
+ *
+ * YOU ARE NOT ALLOWED TO REDISTRIBUTE OR RESELL THIS FILE OR ANY OTHER FILE
+ * USED BY THIS MODULE.
+ *
+ * @author    GURU CODERS SRL <stickyrst@gmail.com>
+ * @copyright 2018-2021 GURU CODERS SRL
+ * @license   Commercial
+ */
+
+.rc_fancourier_awbs {
+    margin-bottom: 20px;
+}
+
+.rc_fancourier_awbs input.rc_fancourier_awb_input {
+    width: 140px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.rc_fancourier_awbs .rc_fancourier_deleteawb, .rc_fancourier_awbs .rc_fancourier_showawb {
+    margin-right: 5px;
+}
+
+.rc_fancourier_awbs .row {
+    margin-bottom: 5px;
+}
+.rc_fan_show_office {
+    display: none;
+}
+.rc_fancourier_infos_container, .rc_fancourier_awb_manual, .rc_fancourier_cost_container {
+    background: #d3d8db;
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.rc_fancourier_infos_container {
+    float: right;
+}
+.rc_fancourier_infos_container p,
+.rc_fancourier_cost_container p {
+    margin-bottom: 3px;
+}
+.rc_fancourier_refresh_order_infos, .rc_fancourier_manual_awb_add,
+.rc_fancourier_cost_container #rc_fancourier_calculate_cost {
+    margin-top: 5px;
+    width: 100%;
+}
+.rc_fancourier_awb_actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+.rc_fancourier_awb_actions #rc_fancourier_generate_awb {
+    flex: 1 1 auto;
+}
+.rc_fancourier_awb_actions #rc_fancourier_return_awb_btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+.rc_fancourier_packing_panel {
+    display: none;
+}
+.rc_fancourier_packing_data {
+    display: block;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+.rc_fancourier_packing_data input[type="text"] {
+    width: 100px;
+    display: inline-block;
+    margin-right: 20px;
+}
+#manual_add_awb, #rc_fancourier_location_manual {
+    display: inline-block;
+}
+
+/* ===== Shipping cost result card ===== */
+.rc-fan-cost-card {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    margin-top: 8px;
+    font-size: 13px;
+    background: #fff;
+    min-width: 280px;
+}
+.rc-fan-cost-card-header {
+    padding: 10px 16px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+}
+.rc-fan-type-success .rc-fan-cost-card-header { background: #3aaa35; }
+.rc-fan-type-warning .rc-fan-cost-card-header { background: #e27b00; }
+.rc-fan-type-danger  .rc-fan-cost-card-header { background: #c0392b; }
+
+.rc-fan-cost-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.rc-fan-cost-table tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+.rc-fan-cost-table tr:last-child {
+    border-bottom: none;
+}
+.rc-fan-cost-table td {
+    padding: 9px 16px;
+    vertical-align: middle;
+}
+.rc-fan-cost-table td.rc-fan-label {
+    color: #555;
+    width: 65%;
+}
+.rc-fan-cost-table td.rc-fan-value {
+    font-weight: 600;
+    text-align: right;
+    color: #333;
+    white-space: nowrap;
+}
+.rc-fan-sep-label {
+    background: #e9ecef;
+    padding: 5px 16px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6c757d;
+    border-top: 1px solid #dee2e6;
+}
+.rc-fan-subtotal-row {
+    border-top: 2px solid #dee2e6 !important;
+    background: #f8f9fa;
+}
+.rc-fan-api-total-row {
+    background: #edf7ed;
+}
+.rc-fan-api-total-row td {
+    color: #1a7e1a;
+}
+.rc-fan-zero {
+    color: #b0b8c1;
+}
+.rc-fan-disc-row {
+    background: #f8f9fa;
+}
+.rc-fan-disc-pos  { color: #7a5500; }
+.rc-fan-disc-neg  { color: #c0392b; }
+.rc-fan-disc-zero { color: #1a7e1a; }
+
+.rc-fan-json-section {
+    border-top: 2px solid #e9ecef;
+    background: #f8f9fa;
+}
+.rc-fan-json-toggle {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    color: #25b9d7;
+    border-bottom: 1px solid #e9ecef;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: background 0.15s ease;
+            transition: background 0.15s ease;
+}
+.rc-fan-json-toggle:hover {
+    background: #e9ecef;
+    color: #1a8fa6;
+}
+.rc-fan-toggle-icon {
+    font-size: 10px;
+    display: inline-block;
+    min-width: 10px;
+    line-height: 1;
+}
+.rc-fan-json-pre {
+    display: none;
+    background: #1e1e2e;
+    color: #cdd6f4;
+    padding: 12px 16px;
+    margin: 0;
+    font-size: 11px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    overflow-x: auto;
+    max-height: 320px;
+    overflow-y: auto;
+    border-top: 1px solid #2d2d3e;
+    white-space: pre;
+    line-height: 1.6;
+}

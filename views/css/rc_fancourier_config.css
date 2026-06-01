@@ -1,0 +1,84 @@
+/**
+ * 2018-2021 GURU CODERS SRL
+ *
+ * NOTICE OF LICENSE
+ *
+ * DISCLAIMER
+ *
+ * YOU ARE NOT ALLOWED TO REDISTRIBUTE OR RESELL THIS FILE OR ANY OTHER FILE
+ * USED BY THIS MODULE.
+ *
+ * @author    GURU CODERS SRL <stickyrst@gmail.com>
+ * @copyright 2018-2021 GURU CODERS SRL
+ * @license   Commercial
+ */
+
+.bootstrap .alert.rc_fancourier_heading {
+    padding: 5px 0;
+}
+
+.bootstrap .form-horizontal .form-group.rc_fancourier_heading .control-label {
+    padding-top: 0;
+}
+
+#rc_fancourier_locations_table, #rc_fancourier_services_table {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#rc_fancourier_locations_table th, #rc_fancourier_locations_table td {
+    padding: 3px 5px;
+    text-align: center;
+    height: 37px;
+}
+
+#rc_fancourier_locations_table .rc_fancourier_listing_add td {
+    text-align: left;
+}
+
+#rc_fancourier_locations_table tr:first-child td {
+    background-color: #dcf4f9;
+}
+
+#rc_fancourier_locations_table tr:first-child td:last-child:after {
+    content: '*';
+}
+
+.rc_fancourier_heading {
+    display: block!important;
+}
+
+/* PS 1.7 / 8 / 9 — section heading alignment fix */
+.form-group.alert.rc_fancourier_heading {
+    padding: 6px 12px;
+    display: flex!important;
+    align-items: center;
+    position: relative;
+}
+
+.form-group.alert.rc_fancourier_heading::before {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-group.alert.rc_fancourier_heading::after {
+    display: none!important;
+    content: none!important;
+}
+
+.form-group.alert.rc_fancourier_heading .control-label {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0;
+    color: inherit;
+}
+
+.form-group.alert.rc_fancourier_heading > div:not(.control-label) {
+    display: none!important;
+}

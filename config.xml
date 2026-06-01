@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>rc_fancourier</name>
+    <displayName><![CDATA[Romanian Carriers - Fan Courier]]></displayName>
+    <version><![CDATA[2.6.8]]></version>
+    <description><![CDATA[Calculate shipping fees, generate AWBs, city selector in frontoffice &amp; backoffice, automatically change order states based on their delivery states - all in one module]]></description>
+    <author><![CDATA[GURU CODERS]]></author>
+    <tab><![CDATA[shipping_logistics]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>
